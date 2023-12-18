@@ -1,7 +1,8 @@
 <template>
   <button class="btn btn-primary">
-    <i class="fa fa-2x fa-plus"></i>
-   {{icon}}
+    <i class="fa  fa-plus"
+    :class="icon"></i>
+   
   </button>
 </template>
 
@@ -9,7 +10,7 @@
 export default{
   props:{
     icon:{
-      default:'Borrar',
+      default:'fa-2x',
       type:String
     }
   }
@@ -21,9 +22,14 @@ button{
   position:fixed;
   bottom:20px;
   right: 20px;
-  widows: 80px;
+  width: 80px;
   height: 80px;
+  border-radius: 100%;
+cursor: pointer;
   
 
+}
+i{
+ font-size: 35px;
 }
 </style>
