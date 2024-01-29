@@ -1,5 +1,6 @@
 <template>
-  <button class="btn btn-primary">
+  <button class="btn btn-primary"
+  @click="$emit('on:click')">
     <i class="fa  fa-plus"
     :class="icon"></i>
    
@@ -13,7 +14,7 @@ export default{
       default:'fa-2x',
       type:String
     }
-  }
+  },
 }
 </script>
 
